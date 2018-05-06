@@ -776,6 +776,7 @@ Math.round(qs_Nla("atvcap")),g=Math.round(qs_Ola());var h=Math.round(qs_stb("tad
 
 qs_Tla=function(){if(window.performance&&window.performance.memory){var a=window.performance.memory,b={};b.ujhs=Math.round(a.usedJSHeapSize/1E6);b.tjhs=Math.round(a.totalJSHeapSize/1E6);b.jhsl=Math.round(a.jsHeapSizeLimit/1E6);return qs_Yla(b)}return""};var qs_Yla=function(a){return Object.keys(a).map(function(b){return b+"."+a[b]}).join(",")};
 
+qs_OSa=function(){if(!window.performance)return"";var a=performance.getEntries();return a&&a.length&&(a=a[0].workerStart,0<a)?String(Math.floor(a)):""};
 qs_Xi("sye6");qs_up();
 }catch(e){_DumpException(e)}
 /* _Module_:csi */
